@@ -1,0 +1,141 @@
+@import "null.css";
+@font-face {
+	font-family: "Kazimir";
+	src: url("../fonts/Kazimir-Light.woff2") format("woff2"), url("../fonts/Kazimir-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Kazimir";
+	src: url("../fonts/Kazimir-Medium.woff2") format("woff2"), url("../fonts/Kazimir-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Graphik LC Web";
+	src: url("../fonts/GraphikLCWeb-Medium.woff2") format("woff2"), url("../fonts/GraphikLCWeb-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+body {
+	background: url("../img/Disney.png") center / cover fixed no-repeat;
+	font-family: "Kazimir", "Times New Roman", Times, serif;
+	font-weight: 300;
+	color: #ffffff;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	max-width: 1200px;
+	margin: 0 auto;
+	font-size: 18px;
+	background: #0000008a;
+	padding: 30px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Graphik LC Web", Arial, Tahoma, Verdana, sans-serif;
+	font-weight: bold;
+}
+h1 {
+	font-size: 40px;
+	margin-bottom: 50px;
+	text-align: center;
+	padding: 15px;
+}
+h2 {
+	font-size: 34px;
+	margin-bottom: 30px;
+}
+h3 {
+	font-size: 22px;
+	margin-bottom: 10px;
+	padding: 0 0 0 20px;
+}
+.main-header {
+	margin-bottom: 50px;
+}
+.main-header p:first-of-type {
+	font-size: 22px;
+	font-weight: 500;
+}
+.main-header img {
+	width: 100%;
+	margin-bottom: 25px;
+	border: 10px solid rgb(78, 78, 78);
+}
+.content-item {
+	padding: 15px;
+	margin-bottom: 35px;
+	border: 3px solid rgb(214, 214, 214);
+}
+.content-item p {
+	margin-bottom: 25px;
+}
+.choice:last-child *:last-child {
+	margin-bottom: 0;
+}
+.content-items > :last-child {
+	margin-bottom: 0;
+}
+.content-images {
+	max-width: max-content;
+	margin: 0 auto 30px;
+}
+.content-images img {
+	max-height: 400px;
+}
+.film-link {
+	text-decoration: underline;
+}
+a:hover {
+	color: rgb(255, 251, 9);
+}
+a:active {
+	font-size: smaller;
+}
+a:visited {
+	color: rgb(219, 219, 219);
+}
+h1:hover {
+	background: rgb(214, 156, 101);
+	border-radius: 30px;
+	font-size: 42px;
+}
+.content-item:nth-child(odd):hover {
+	background: rgba(16, 187, 1, 0.541);
+}
+.content-item:nth-child(even):hover {
+	background: rgba(255, 174, 0, 0.541);
+}
+.content-item:first-child:hover {
+	background: rgba(128, 128, 128, 0.541);
+}
+.content-item:last-child:hover {
+	background: rgba(248, 0, 0, 0.541);
+}
+h3::first-letter {
+	color: rgb(0, 17, 255);
+}
+h2::after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 7%;
+	margin: 10px 0 0 0;
+	background-color: rgb(25, 0, 255);
+}
+h3::before {
+	content: "";
+	background: url("../img/YellowDot.png") 0 0 / 15px no-repeat;
+	width: 15px;
+	height: 15px;
+	margin: 0 10px 0 -20px;
+	display: inline-block;
+}
